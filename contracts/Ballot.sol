@@ -4,17 +4,17 @@ pragma solidity >=0.7.0 <0.9.0;
 
 /** 
  * @title Ballot
- * @dev Implements zkVoting process
+ * @dev Implements the zkVoting process
  */
 contract Ballot {
-    address public chairperson; // this could be the zkp verifier contract; this contract's deployer
+    address public chairperson; // this contract's deployer
 
     uint public quorumInFavour;
     uint public votesInFavour = 0;
     uint public votesAgainst = 0;
     uint public votesAbstaining = 0;
 
-    bytes32[] public nullifiers;
+    mapping (bytes32 nullifier => bool nullifierExists) public nullifiers;
 
     /** 
      * @dev Create a new ballot
@@ -28,22 +28,21 @@ contract Ballot {
 
     /**
      * @dev Give your vote
-     * @param proposalType 0 to vote for yes, 1 for no, 2 for abstain
+     * @param proposalType set to 0 to vote for yes, to 1 for no, to 2 for abstain
+     * @param zkProof to verify the vote
+     * @param nullifier to avoid double-voting
      */
     function vote(uint8 proposalType, bytes32 zkProof, bytes32 nullifier) public {
-
-        for (uint i=0; i<nullifiers.length; i++) {
-            if (nullifiers[i]==nullifier) {
-                revert("Voter has already voted");
-            }
+        if (nullifiers[nullifier]) {
+            revert("Voter has already voted");
         }
-        
+    
         bool zkProofIsValid = true; /* TODO: Verify zkProof using generated verifier contract */
         if (!zkProofIsValid) {
             revert("Provided zkProof is not valid");
         }
 
-        nullifiers.push(nullifier);
+        nullifiers[nullifier]=true;
 
         if (proposalType==0) {
             votesInFavour++;
@@ -56,6 +55,9 @@ contract Ballot {
         }
     }
 
+    /**
+     * @dev Check if the ballot's in-favour votes passed the required in-favour quorum
+     */
     function ballotWasAccepted() public view 
         returns (bool accepted) 
         {
