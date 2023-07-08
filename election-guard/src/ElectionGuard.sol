@@ -8,6 +8,8 @@ import "safe-contracts/contracts/common/Enum.sol";
 import "safe-contracts/contracts/base/GuardManager.sol";
 import "safe-contracts/contracts/Safe.sol";
 
+import {ZkBallot} from "./ZkBallot.sol";
+
 /**
  * @title Debug Transaction Guard - Emits transaction events with extended information.
  * @dev This guard is only meant as a development tool and example
@@ -76,10 +78,13 @@ contract DebugTransactionGuard is BaseGuard {
         emit TransactionDetails(msg.sender, txHash, to, value, data, operation, safeTxGas, gasPrice > 0, nonce, signatures, executor);
         txNonces[txHash] = nonce;
 
-    // TODO:
-    // 1. set vote contract address
-    // 1. Pull vote id from the dataField -- do we need to do any parsing here?
-    // 1. revert if isPassed(voteId) is false
+        // 1. set vote contract address
+        // 2. Pull vote id from the dataField -- do we need to do any parsing here?
+        // 3. revert if false
+
+        ZkBallot zkb = new ZkBallot();
+        bool success = zkb.checkElectionSuccess(txHash);
+        require(success, "Election not yet successful.");
 
     }
 
