@@ -29,9 +29,9 @@ const setup = async () => {
     safeAddress,
   });
 
-  // const safeTransaction = await safeSdk.createEnableGuardTx(guardAddress);
-  // const txResponse = await safeSdk.executeTransaction(safeTransaction);
-  // await txResponse.transactionResponse?.wait();
+  const safeTransaction = await safeSdk.createEnableGuardTx(guardAddress);
+  const txResponse = await safeSdk.executeTransaction(safeTransaction);
+  await txResponse.transactionResponse?.wait();
 
   const a = await safeSdk.getGuard();
 
