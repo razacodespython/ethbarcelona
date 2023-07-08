@@ -4,10 +4,10 @@ pragma solidity >=0.7.0 <0.9.0;
 
 /** 
  * @title Ballot
- * @dev Implements zkVoting process
+ * @dev Implements the zkVoting process
  */
 contract Ballot {
-    address public chairperson; // this could be the zkp verifier contract; this contract's deployer
+    address public chairperson; // this contract's deployer
 
     uint public quorumInFavour;
     uint public votesInFavour = 0;
@@ -28,7 +28,9 @@ contract Ballot {
 
     /**
      * @dev Give your vote
-     * @param proposalType 0 to vote for yes, 1 for no, 2 for abstain
+     * @param proposalType set to 0 to vote for yes, to 1 for no, to 2 for abstain
+     * @param zkProof to verify the vote
+     * @param nullifier to avoid double-voting
      */
     function vote(uint8 proposalType, bytes32 zkProof, bytes32 nullifier) public {
 
@@ -56,6 +58,9 @@ contract Ballot {
         }
     }
 
+    /**
+     * @dev Check if the ballot's in-favour votes passed the required in-favour quorum
+     */
     function ballotWasAccepted() public view 
         returns (bool accepted) 
         {
