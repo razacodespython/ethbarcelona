@@ -32,13 +32,17 @@ contract Ballot {
      */
     function vote(uint8 proposalType, bytes32 zkProof, bytes32 nullifier) public {
 
-        /* TODO: Verify zkProof */
-
         for (uint i=0; i<nullifiers.length; i++) {
             if (nullifiers[i]==nullifier) {
                 revert("Voter has already voted");
             }
         }
+        
+        bool zkProofIsValid = true; /* TODO: Verify zkProof using generated verifier contract */
+        if (!zkProofIsValid) {
+            revert("Provided zkProof is not valid");
+        }
+
         nullifiers.push(nullifier);
 
         if (proposalType==0) {
