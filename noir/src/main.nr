@@ -39,5 +39,6 @@ fn main(root : pub Field,
     let is_member = std::merkle::check_membership(root, address, index, hash_path);
     assert(is_member == 1);
 
+    assert(vote != 9999); // this is for preventing "unused variable"
     nullifier[0]
 }
