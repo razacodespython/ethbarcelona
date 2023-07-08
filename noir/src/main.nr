@@ -7,7 +7,7 @@ fn main(root : pub Field,
     pub_key_x: [u8; 32], // diff
     pub_key_y: [u8; 32], // diff
     signature: [u8; 64], // diff
-    hashed_message: pub [u8; 32],
+    hashed_message: [u8; 32],
     proposalId: pub Field,
     vote: pub Field
 ) -> pub Field {
