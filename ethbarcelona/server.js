@@ -32,7 +32,7 @@ const handle = app.getRequestHandler();
 
   const executeCommand = () => {
     try {
-      const output = execSync('/Users/razazaidi/.nargo/bin/nargo --version').toString();
+      const output = execSync('/Users/razazaidi/.nargo/bin/nargo prove p').toString();
       console.log('Output:', output);
     } catch (error) {
       console.error('An error occurred:', error);
