@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <input id="connect_button" type="button" value="Connect" onclick="connectWallet()" style="display: none"></input>
+  <p id="account_address" style="display: none"></p>
+  <p id="web3_message"></p>
+  <p id="contract_state"></p>
+  <input type="input"  value="" id="_hello"></input>
+  <input type="button" value="Set Hello" onclick="_setHello()"></input>
+  <br>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
+  <script type="text/javascript" src="blockchain_stuff.js"></script>
+</body>
+</html>
+
+<script>
+  function _setHello()
+  {
+    _hello = document.getElementById("_hello").value
+    setHello(_hello)
+  }
+</script>
