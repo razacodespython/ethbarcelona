@@ -33,8 +33,7 @@ fn main(root : pub Field,
     let nullifier = std::hash::pedersen([
         root,
         hashedSignature[0],
-        proposalId,
-        vote
+        proposalId
     ]);
 
     let is_member = std::merkle::check_membership(root, address, index, hash_path);
