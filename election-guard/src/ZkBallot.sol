@@ -41,6 +41,7 @@ contract ZkBallots {
 	
 	bool validProof = verifyProof(_proof);
 
+	// TODO: is this a copy or reference?
 	Election storage election = elections[_electionId];
 
 	// check if nullifier has been used, add to mapping if not.
@@ -57,4 +58,11 @@ contract ZkBallots {
 	// If item passed is parsed, need to change _proof to memory, not calldata
     }
 
+    function checkElectionSuccess(uint32 _electionId) public view returns (bool){
+	//TODO: Check vote hit quorum and if election.voteBalance > 0
+    }
+
+    function createElection(string calldata _name) public returns (uint32) {
+	// TODO: create the elction and return id as a uint32
+    }
 }
