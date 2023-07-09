@@ -53,7 +53,7 @@ export default function handler(req, res) {
                     pub_key_y = [${sArrayY}]
                     signature = [${sArrayBody}]
                     index = "0"
-                    proposalId = "0"
+                    proposalId = "8"
                     root = "0x01604aca52c71e9a07bc5c317a6e8b6caa1e34f20039139fa69cf9e13a02118c"
                     hash_path = ["0x6340223526AfF6887093fA9968a01A19d2503C66", "0x151a64570e4997739458455ba4ab5A535FD2E306"]
                     vote = "1"
@@ -70,10 +70,6 @@ fs.writeFile(filePath, Prover, (err) => {
     }
   });
   
- 
-
-  
-
     const response={"message":"all good"}
     res.send(response)
   }
