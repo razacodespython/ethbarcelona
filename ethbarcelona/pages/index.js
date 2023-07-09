@@ -37,11 +37,40 @@ export default function Home() {
     const data = await response.json();
     console.log(data)
   };
+
+const sendSignature = async () =>{
+
+    console.log("clicked")
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+  
+    await provider.send("eth_requestAccounts", []);
+  
+    const signer = provider.getSigner()
+  
+    const message = await signer.signMessage("test message");
+    //console.log(JSON.stringify({ message }));
+    apiSignature(message)
+}
+
+const apiSignature = async (messageParam) =>{
+  const response = await fetch("api/signature", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(messageParam),
+  })
+  
+  const data = await response.json()
+  console.log(data)    
+}
+
   return (
     <>
      <h1>Hello World</h1>
      <button onClick={connectButton}>Connect Wallet</button>
      <button  type="submit" onClick={apiCall}> apicall </button>
+     <button onClick={sendSignature}>Iniate signature</button>
      <p>Address: {addi}</p>
       <p>Network: {network}</p>
       <p>Chain ID : {chainId}</p>
