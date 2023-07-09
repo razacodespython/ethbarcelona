@@ -1,4 +1,4 @@
-const { execSync } = require('child_process');
+// const { execSync } = require('child_process');
 const { createServer } = require('http');
 const next = require('next');
 
@@ -30,14 +30,14 @@ const handle = app.getRequestHandler();
 //     }
 //   };
 
-  const executeCommand = () => {
-    try {
-      const output = execSync('/Users/razazaidi/.nargo/bin/nargo prove p').toString();
-      console.log('Output:', output);
-    } catch (error) {
-      console.error('An error occurred:', error);
-    }
-  };
+  // const executeCommand = () => {
+  //   try {
+  //     const output = execSync('/Users/razazaidi/.nargo/bin/nargo prove p').toString();
+  //     console.log('Output:', output);
+  //   } catch (error) {
+  //     console.error('An error occurred:', error);
+  //   }
+  // };
 
 //   const executeSourceNoir = () => {
 //     try {
@@ -56,7 +56,7 @@ const handle = app.getRequestHandler();
 
 //   executeSourceCommand();
 //   checkNoir();
-  executeCommand();
+  // executeCommand();
 //   executeSourceNoir();
 
 
