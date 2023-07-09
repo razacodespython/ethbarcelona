@@ -1,0 +1,175 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/ElectionGuard.t.sol",
+    "id": 32249,
+    "exportedSymbols": {
+      "BaseGuard": [
+        30443
+      ],
+      "DSTest": [
+        2291
+      ],
+      "DebugTransactionGuard": [
+        31973
+      ],
+      "Enum": [
+        31451
+      ],
+      "Executor": [
+        30314
+      ],
+      "FallbackManager": [
+        30376
+      ],
+      "Guard": [
+        30417
+      ],
+      "GuardManager": [
+        30505
+      ],
+      "IERC165": [
+        31719
+      ],
+      "ISignatureValidator": [
+        31738
+      ],
+      "ISignatureValidatorConstants": [
+        31725
+      ],
+      "ModuleManager": [
+        30931
+      ],
+      "NativeCurrencyPaymentFallback": [
+        31473
+      ],
+      "OwnerManager": [
+        31444
+      ],
+      "Safe": [
+        30281
+      ],
+      "SafeMath": [
+        31707
+      ],
+      "SecuredTokenTransfer": [
+        31500
+      ],
+      "SelfAuthorized": [
+        31526
+      ],
+      "SignatureDecoder": [
+        31546
+      ],
+      "Singleton": [
+        31552
+      ],
+      "StdAssertions": [
+        3821
+      ],
+      "StdChains": [
+        4515
+      ],
+      "StdCheats": [
+        6927
+      ],
+      "StdInvariant": [
+        7217
+      ],
+      "StdStorage": [
+        7967
+      ],
+      "StdStyle": [
+        10611
+      ],
+      "StdUtils": [
+        11459
+      ],
+      "StorageAccessible": [
+        31601
+      ],
+      "Test": [
+        11508
+      ],
+      "TestBase": [
+        2357
+      ],
+      "Vm": [
+        13014
+      ],
+      "ZkBallot": [
+        32244
+      ],
+      "console": [
+        21078
+      ],
+      "console2": [
+        29203
+      ],
+      "stdError": [
+        6993
+      ],
+      "stdJson": [
+        7793
+      ],
+      "stdMath": [
+        7935
+      ],
+      "stdStorage": [
+        9400
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:533:37",
+    "nodes": [
+      {
+        "id": 32246,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:37",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 32247,
+        "nodeType": "ImportDirective",
+        "src": "65:28:37",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 32249,
+        "sourceUnit": 11509,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 32248,
+        "nodeType": "ImportDirective",
+        "src": "94:34:37",
+        "nodes": [],
+        "absolutePath": "src/ElectionGuard.sol",
+        "file": "../src/ElectionGuard.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 32249,
+        "sourceUnit": 31974,
+        "symbolAliases": [],
+        "unitAlias": ""
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 37
+}
