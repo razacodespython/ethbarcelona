@@ -43,11 +43,11 @@ const sendSignature = async () =>{
     console.log("clicked")
     const provider = new ethers.providers.Web3Provider(window.ethereum)
   
-    await provider.send("eth_requestAccounts", []);
+    // await provider.send("eth_requestAccounts", []);
   
     const signer = provider.getSigner()
   
-    const message = await signer.signMessage("test message");
+    const message = await signer.signMessage("hi");
     //console.log(JSON.stringify({ message }));
     apiSignature(message)
 }
