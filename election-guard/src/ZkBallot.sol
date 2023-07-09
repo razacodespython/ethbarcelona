@@ -61,7 +61,10 @@ contract ZkBallot {
 
     function verifyProof(bytes calldata _proof, bytes32[] calldata _publicInputs) public view returns (bool){
 	// If item passed is parsed, need to change _proof to memory, not calldata
-	bool result = IUltraVerifier(0x3172a66630BE2BE7d02f38d53dc038A090B82eA7).verify(_proof, _publicInputs);
+	//goerli
+	// bool result = IUltraVerifier(0x3172a66630BE2BE7d02f38d53dc038A090B82eA7).verify(_proof, _publicInputs);
+	//gnosis
+	bool result = IUltraVerifier(0xE249C59F4c5A0Dd8b0Fe1610e25b4ECA3A2fc74a).verify(_proof, _publicInputs);
 
 	return result;
     }

@@ -82,7 +82,7 @@ contract DebugTransactionGuard is BaseGuard {
         // 2. Pull vote id from the dataField -- do we need to do any parsing here?
         // 3. revert if false
 
-        ZkBallot zkb = ZkBallot(0xc035175E22f76756FB06b7d1a9521b3f1F2431BC);
+        ZkBallot zkb = ZkBallot(0xEce86f082E7f11525886D4c9B6B04b5875DE381e);
         bool success = zkb.checkElectionSuccess(txHash);
         require(success, "Election not yet successful.");
 

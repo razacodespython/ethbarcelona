@@ -4,7 +4,8 @@ import { ethers } from 'ethers';
 import Safe, { EthersAdapter } from '@safe-global/protocol-kit'; //dropped Safe import
 import dotenv from 'dotenv';
 
-dotenv.config({ path: `.env.goerli` });
+// dotenv.config({ path: `.env.goerli` });
+dotenv.config({ path: `.env.gnosis` });
 
 const networkConfig = process.env;
 
