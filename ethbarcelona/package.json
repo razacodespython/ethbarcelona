@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@safe-global/api-kit": "^1.1.0",
+    "@safe-global/protocol-kit": "^1.0.1",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "ethers": "^5.7.1",

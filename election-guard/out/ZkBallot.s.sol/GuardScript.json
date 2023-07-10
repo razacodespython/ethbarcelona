@@ -1,0 +1,606 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "IS_SCRIPT",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "run",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "setUp",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405260048054600160ff199182168117909255600c8054909116909117905534801561002d57600080fd5b50610cae8061003d6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80630a9254e414610046578063c040622614610048578063f8ccbf4714610050575b600080fd5b005b610046610071565b600c5461005d9060ff1681565b604051901515815260200160405180910390f35b7f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b0316637fb5297f6040518163ffffffff1660e01b8152600401600060405180830381600087803b1580156100cf57600080fd5b505af11580156100e3573d6000803e3d6000fd5b505050506040516100f390610189565b604051809103906000f08015801561010f573d6000803e3d6000fd5b50507f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b03166376eadd366040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561016f57600080fd5b505af1158015610183573d6000803e3d6000fd5b50505050565b610ae2806101978339019056fe608060405234801561001057600080fd5b50610ac2806100206000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c80637349746b1161005b5780637349746b146101105780637663aca614610142578063bbcb7c7414610155578063fd7f643d1461016857600080fd5b806305ab39b71461008d57806309a5bbee146100ba5780631257fb7d146100e8578063509b0826146100fd575b600080fd5b6100a061009b36600461063e565b6101ce565b6040516100b1959493929190610657565b60405180910390f35b6100da6100c836600461063e565b60026020526000908152604090205481565b6040519081526020016100b1565b6100fb6100f6366004610716565b61028e565b005b6100fb61010b3660046107b0565b610464565b61013261011e36600461063e565b600090815260026020526040902054151590565b60405190151581526020016100b1565b61013261015036600461063e565b61053a565b610132610163366004610716565b6105b1565b6101ad61017636600461063e565b60008181526002602081815260408084205484529083905290912060018101549181015460039091015463ffffffff169193909250565b60408051938452602084019290925263ffffffff16908201526060016100b1565b6000602081905290815260409020805481906101e99061082a565b80601f01602080910402602001604051908101604052809291908181526020018280546102159061082a565b80156102625780601f1061023757610100808354040283529160200191610262565b820191906000526020600020905b81548152906001019060200180831161024557829003601f168201915b5050506001840154600285015460038601546004909601549495919490935063ffffffff909116915085565b600061029c858585856105b1565b9050806102f05760405162461bcd60e51b815260206004820152601860248201527f546869732070726f6f66206973206e6f742076616c69642e000000000000000060448201526064015b60405180910390fd5b60008060008585600181811061030857610308610864565b9050602002013581526020019081526020016000209050600160008585600381811061033657610336610864565b602090810292909201358352508101919091526040016000205460ff16156103aa5760405162461bcd60e51b815260206004820152602160248201527f546869732070726f6f662068617320616c7265616479206265656e20757365646044820152601760f91b60648201526084016102e7565b6001806000868660038181106103c2576103c2610864565b90506020020135815260200190815260200160002060006101000a81548160ff02191690831515021790555060008484600281811061040357610403610864565b9050602002013560001c1161042d5760028101805490600061042483610890565b91905055610444565b60028101805490600061043f836108ad565b919050555b50600181018054906000610457836108cc565b9190505550505050505050565b6040805160c06020601f8901819004028201810190925260a081018781526000928291908a908a908190850183828082843760009201829052509385525050506020808301829052604080840183905263ffffffff8a166060850152608090930186905286825260028152828220889055878252819052208151919250829181906104ef908261093f565b506020820151600182015560408201516002820155606082015160038201805463ffffffff191663ffffffff909216919091179055608090910151600490910155505b505050505050565b6000818152600260209081526040808320548084529183905282206001908101541080159190829061058b57506000818152602081905260409020600381015460019091015463ffffffff90911611155b91508180156105a95750600081815260208190526040812060020154135b949350505050565b604051633a94343960e21b81526000908190733172a66630be2be7d02f38d53dc038a090b82ea79063ea50d0e4906105f39089908990899089906004016109ff565b602060405180830381865afa158015610610573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106349190610a63565b9695505050505050565b60006020828403121561065057600080fd5b5035919050565b60a08152600086518060a084015260005b81811015610685576020818a0181015160c0868401015201610668565b50600060c0828501015260c0601f19601f8301168401019150508560208301528460408301526106bd606083018563ffffffff169052565b8260808301529695505050505050565b60008083601f8401126106df57600080fd5b50813567ffffffffffffffff8111156106f757600080fd5b60208301915083602082850101111561070f57600080fd5b9250929050565b6000806000806040858703121561072c57600080fd5b843567ffffffffffffffff8082111561074457600080fd5b610750888389016106cd565b9096509450602087013591508082111561076957600080fd5b818701915087601f83011261077d57600080fd5b81358181111561078c57600080fd5b8860208260051b85010111156107a157600080fd5b95989497505060200194505050565b60008060008060008060a087890312156107c957600080fd5b863567ffffffffffffffff8111156107e057600080fd5b6107ec89828a016106cd565b909750955050602087013563ffffffff8116811461080957600080fd5b95989497509495604081013595506060810135946080909101359350915050565b600181811c9082168061083e57607f821691505b60208210810361085e57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b6000600160ff1b82016108a5576108a561087a565b506000190190565b60006001600160ff1b0182016108c5576108c561087a565b5060010190565b6000600182016108c5576108c561087a565b634e487b7160e01b600052604160045260246000fd5b601f82111561093a57600081815260208120601f850160051c8101602086101561091b5750805b601f850160051c820191505b8181101561053257828155600101610927565b505050565b815167ffffffffffffffff811115610959576109596108de565b61096d81610967845461082a565b846108f4565b602080601f8311600181146109a2576000841561098a5750858301515b600019600386901b1c1916600185901b178555610532565b600085815260208120601f198616915b828110156109d1578886015182559484019460019091019084016109b2565b50858210156109ef5787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b6040815283604082015283856060830137600060608583018101829052601f19601f8701168301838103820160208501529081018490526001600160fb1b03841115610a4a57600080fd5b8360051b80866080840137016080019695505050505050565b600060208284031215610a7557600080fd5b81518015158114610a8557600080fd5b939250505056fea264697066735822122013ebc4d86d3b83ca47b9aa6d1cc4b3103a1d8dee996ed32520035662ee92727164736f6c63430008100033a2646970667358221220fc652a3ad0a1dd29545f9f621c393187f13dec38a7f89711ffeaf40d6ddc712264736f6c63430008100033",
+    "sourceMap": "143:185:12:-:0;;;3161:44:2;;;3201:4;-1:-1:-1;;3161:44:2;;;;;;;;758:28:1;;;;;;;;;;;143:185:12;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80630a9254e414610046578063c040622614610048578063f8ccbf4714610050575b600080fd5b005b610046610071565b600c5461005d9060ff1681565b604051901515815260200160405180910390f35b7f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b0316637fb5297f6040518163ffffffff1660e01b8152600401600060405180830381600087803b1580156100cf57600080fd5b505af11580156100e3573d6000803e3d6000fd5b505050506040516100f390610189565b604051809103906000f08015801561010f573d6000803e3d6000fd5b50507f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b03166376eadd366040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561016f57600080fd5b505af1158015610183573d6000803e3d6000fd5b50505050565b610ae2806101978339019056fe608060405234801561001057600080fd5b50610ac2806100206000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c80637349746b1161005b5780637349746b146101105780637663aca614610142578063bbcb7c7414610155578063fd7f643d1461016857600080fd5b806305ab39b71461008d57806309a5bbee146100ba5780631257fb7d146100e8578063509b0826146100fd575b600080fd5b6100a061009b36600461063e565b6101ce565b6040516100b1959493929190610657565b60405180910390f35b6100da6100c836600461063e565b60026020526000908152604090205481565b6040519081526020016100b1565b6100fb6100f6366004610716565b61028e565b005b6100fb61010b3660046107b0565b610464565b61013261011e36600461063e565b600090815260026020526040902054151590565b60405190151581526020016100b1565b61013261015036600461063e565b61053a565b610132610163366004610716565b6105b1565b6101ad61017636600461063e565b60008181526002602081815260408084205484529083905290912060018101549181015460039091015463ffffffff169193909250565b60408051938452602084019290925263ffffffff16908201526060016100b1565b6000602081905290815260409020805481906101e99061082a565b80601f01602080910402602001604051908101604052809291908181526020018280546102159061082a565b80156102625780601f1061023757610100808354040283529160200191610262565b820191906000526020600020905b81548152906001019060200180831161024557829003601f168201915b5050506001840154600285015460038601546004909601549495919490935063ffffffff909116915085565b600061029c858585856105b1565b9050806102f05760405162461bcd60e51b815260206004820152601860248201527f546869732070726f6f66206973206e6f742076616c69642e000000000000000060448201526064015b60405180910390fd5b60008060008585600181811061030857610308610864565b9050602002013581526020019081526020016000209050600160008585600381811061033657610336610864565b602090810292909201358352508101919091526040016000205460ff16156103aa5760405162461bcd60e51b815260206004820152602160248201527f546869732070726f6f662068617320616c7265616479206265656e20757365646044820152601760f91b60648201526084016102e7565b6001806000868660038181106103c2576103c2610864565b90506020020135815260200190815260200160002060006101000a81548160ff02191690831515021790555060008484600281811061040357610403610864565b9050602002013560001c1161042d5760028101805490600061042483610890565b91905055610444565b60028101805490600061043f836108ad565b919050555b50600181018054906000610457836108cc565b9190505550505050505050565b6040805160c06020601f8901819004028201810190925260a081018781526000928291908a908a908190850183828082843760009201829052509385525050506020808301829052604080840183905263ffffffff8a166060850152608090930186905286825260028152828220889055878252819052208151919250829181906104ef908261093f565b506020820151600182015560408201516002820155606082015160038201805463ffffffff191663ffffffff909216919091179055608090910151600490910155505b505050505050565b6000818152600260209081526040808320548084529183905282206001908101541080159190829061058b57506000818152602081905260409020600381015460019091015463ffffffff90911611155b91508180156105a95750600081815260208190526040812060020154135b949350505050565b604051633a94343960e21b81526000908190733172a66630be2be7d02f38d53dc038a090b82ea79063ea50d0e4906105f39089908990899089906004016109ff565b602060405180830381865afa158015610610573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106349190610a63565b9695505050505050565b60006020828403121561065057600080fd5b5035919050565b60a08152600086518060a084015260005b81811015610685576020818a0181015160c0868401015201610668565b50600060c0828501015260c0601f19601f8301168401019150508560208301528460408301526106bd606083018563ffffffff169052565b8260808301529695505050505050565b60008083601f8401126106df57600080fd5b50813567ffffffffffffffff8111156106f757600080fd5b60208301915083602082850101111561070f57600080fd5b9250929050565b6000806000806040858703121561072c57600080fd5b843567ffffffffffffffff8082111561074457600080fd5b610750888389016106cd565b9096509450602087013591508082111561076957600080fd5b818701915087601f83011261077d57600080fd5b81358181111561078c57600080fd5b8860208260051b85010111156107a157600080fd5b95989497505060200194505050565b60008060008060008060a087890312156107c957600080fd5b863567ffffffffffffffff8111156107e057600080fd5b6107ec89828a016106cd565b909750955050602087013563ffffffff8116811461080957600080fd5b95989497509495604081013595506060810135946080909101359350915050565b600181811c9082168061083e57607f821691505b60208210810361085e57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b6000600160ff1b82016108a5576108a561087a565b506000190190565b60006001600160ff1b0182016108c5576108c561087a565b5060010190565b6000600182016108c5576108c561087a565b634e487b7160e01b600052604160045260246000fd5b601f82111561093a57600081815260208120601f850160051c8101602086101561091b5750805b601f850160051c820191505b8181101561053257828155600101610927565b505050565b815167ffffffffffffffff811115610959576109596108de565b61096d81610967845461082a565b846108f4565b602080601f8311600181146109a2576000841561098a5750858301515b600019600386901b1c1916600185901b178555610532565b600085815260208120601f198616915b828110156109d1578886015182559484019460019091019084016109b2565b50858210156109ef5787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b6040815283604082015283856060830137600060608583018101829052601f19601f8701168301838103820160208501529081018490526001600160fb1b03841115610a4a57600080fd5b8360051b80866080840137016080019695505050505050565b600060208284031215610a7557600080fd5b81518015158114610a8557600080fd5b939250505056fea264697066735822122013ebc4d86d3b83ca47b9aa6d1cc4b3103a1d8dee996ed32520035662ee92727164736f6c63430008100033a2646970667358221220fc652a3ad0a1dd29545f9f621c393187f13dec38a7f89711ffeaf40d6ddc712264736f6c63430008100033",
+    "sourceMap": "143:185:12:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;180:31;;217:109;;;:::i;758:28:1:-;;;;;;;;;;;;179:14:14;;172:22;154:41;;142:2;127:18;758:28:1;;;;;;;217:109:12;317:28:0;309:37;;-1:-1:-1;;;;;249:17:12;;:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;278:14;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;317:28:0;309:37;;-1:-1:-1;;;;;301:16:12;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;217:109::o;-1:-1:-1:-;;;;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "IS_SCRIPT()": "f8ccbf47",
+    "run()": "c0406226",
+    "setUp()": "0a9254e4"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"IS_SCRIPT\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"run\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"setUp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"script/ZkBallot.s.sol\":\"GuardScript\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":safe-contracts/=lib/safe-contracts/\"]},\"sources\":{\"lib/forge-std/src/Base.sol\":{\"keccak256\":\"0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224\",\"dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK\"]},\"lib/forge-std/src/Script.sol\":{\"keccak256\":\"0xd566affaba92598bcd059dcb3714a968aeedb365ec0d666815e8b38519e0f433\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2fb5f7a97d2a7a06e10c198b60f05e64176eb4ef306b72800c168e7a7ec51693\",\"dweb:/ipfs/Qmcep4r7YEU3BwFJNTTxZsdCVzBYdtcVp8oDtmwLoZGRzP\"]},\"lib/forge-std/src/StdChains.sol\":{\"keccak256\":\"0x9100bd38453711d5f5ae32d16b4aacef8d4e26abb3061fcc9920cd30cdb49315\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://114654e304083d3403510edd13d7df2223747337150ecf51dd36b441e50498f7\",\"dweb:/ipfs/QmQy6uvcVHyHzU2RbuvEo1hKiV7k81z21gR6DSj4DkCP8D\"]},\"lib/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0xb58d624eb0922d4ab14856efb0ab558b0727ccfc28448c5779f1ab4d98cf3daf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1869fc58cb27a7b680428b79d0e0b6f45bd3c61fedb4b3f895e143fb899519d5\",\"dweb:/ipfs/QmcjECGVpQPjhL2bokDyQeGWdzM99qPFMhq5r7KqKLot7R\"]},\"lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c\",\"dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"lib/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5\",\"dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9\"]},\"lib/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x18ac6dcce9cdfe3bc754ce910b4b97e56963c49a92e50f57d055adb562416b86\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6b29b4a814dc26c3722e994a792f4cc1be86e6b8c2b2adc352ed54fb326593d\",\"dweb:/ipfs/Qma8a7XELNmUepiitaLyxJXW66urnXsvCwx1bMLmRw2Fpn\"]},\"lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0xb5d4816a3f37977b1efa07b5e715daa917e96fd28dec1805c4189653db4ea33a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://34338fa7f079f8d64f20d976f9bf908a710c8728f18c4b361b020b24fedfedf2\",\"dweb:/ipfs/QmYhwY1wi6vVLMUsJ32L3GiSR9HRaFhGL1Y3wRDjy41KXn\"]},\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/forge-std/src/console2.sol\":{\"keccak256\":\"0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973\",\"dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF\"]},\"lib/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0\",\"dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2\"]},\"script/ZkBallot.s.sol\":{\"keccak256\":\"0xc04e5179fd89161d81e2860c63bf27df367739213e812b292a19cac558544e6f\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://6a3f5492ba65ccc2e0edd1011e1fed60c2a1957fa3bfec8fc1f715c57b78ce1c\",\"dweb:/ipfs/QmWENvE8qeYqiSgdv1ST7KvD1CqDdZPT8ZBhJ88skRiyBb\"]},\"src/ZkBallot.sol\":{\"keccak256\":\"0xef7de32228269a31fb87b1b07ac2517dffc9b068f826ae50f2fcdd263dc321ca\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://76eab8996227d4862afe6c8140ee12551ff98051b024c0d097db43fb46f776eb\",\"dweb:/ipfs/QmQhpr4W2mJYdJZph2UVQMoaQVzfw5v4ximdNUC7prGum9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IS_SCRIPT",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "run"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setUp"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":safe-contracts/=lib/safe-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "script/ZkBallot.s.sol": "GuardScript"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/Base.sol": {
+        "keccak256": "0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c",
+        "urls": [
+          "bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224",
+          "dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Script.sol": {
+        "keccak256": "0xd566affaba92598bcd059dcb3714a968aeedb365ec0d666815e8b38519e0f433",
+        "urls": [
+          "bzz-raw://2fb5f7a97d2a7a06e10c198b60f05e64176eb4ef306b72800c168e7a7ec51693",
+          "dweb:/ipfs/Qmcep4r7YEU3BwFJNTTxZsdCVzBYdtcVp8oDtmwLoZGRzP"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdChains.sol": {
+        "keccak256": "0x9100bd38453711d5f5ae32d16b4aacef8d4e26abb3061fcc9920cd30cdb49315",
+        "urls": [
+          "bzz-raw://114654e304083d3403510edd13d7df2223747337150ecf51dd36b441e50498f7",
+          "dweb:/ipfs/QmQy6uvcVHyHzU2RbuvEo1hKiV7k81z21gR6DSj4DkCP8D"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdCheats.sol": {
+        "keccak256": "0xb58d624eb0922d4ab14856efb0ab558b0727ccfc28448c5779f1ab4d98cf3daf",
+        "urls": [
+          "bzz-raw://1869fc58cb27a7b680428b79d0e0b6f45bd3c61fedb4b3f895e143fb899519d5",
+          "dweb:/ipfs/QmcjECGVpQPjhL2bokDyQeGWdzM99qPFMhq5r7KqKLot7R"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdJson.sol": {
+        "keccak256": "0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b",
+        "urls": [
+          "bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c",
+          "dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdStorage.sol": {
+        "keccak256": "0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673",
+        "urls": [
+          "bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5",
+          "dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdUtils.sol": {
+        "keccak256": "0x18ac6dcce9cdfe3bc754ce910b4b97e56963c49a92e50f57d055adb562416b86",
+        "urls": [
+          "bzz-raw://d6b29b4a814dc26c3722e994a792f4cc1be86e6b8c2b2adc352ed54fb326593d",
+          "dweb:/ipfs/Qma8a7XELNmUepiitaLyxJXW66urnXsvCwx1bMLmRw2Fpn"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Vm.sol": {
+        "keccak256": "0xb5d4816a3f37977b1efa07b5e715daa917e96fd28dec1805c4189653db4ea33a",
+        "urls": [
+          "bzz-raw://34338fa7f079f8d64f20d976f9bf908a710c8728f18c4b361b020b24fedfedf2",
+          "dweb:/ipfs/QmYhwY1wi6vVLMUsJ32L3GiSR9HRaFhGL1Y3wRDjy41KXn"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console2.sol": {
+        "keccak256": "0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea",
+        "urls": [
+          "bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973",
+          "dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/interfaces/IMulticall3.sol": {
+        "keccak256": "0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a",
+        "urls": [
+          "bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0",
+          "dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2"
+        ],
+        "license": "MIT"
+      },
+      "script/ZkBallot.s.sol": {
+        "keccak256": "0xc04e5179fd89161d81e2860c63bf27df367739213e812b292a19cac558544e6f",
+        "urls": [
+          "bzz-raw://6a3f5492ba65ccc2e0edd1011e1fed60c2a1957fa3bfec8fc1f715c57b78ce1c",
+          "dweb:/ipfs/QmWENvE8qeYqiSgdv1ST7KvD1CqDdZPT8ZBhJ88skRiyBb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/ZkBallot.sol": {
+        "keccak256": "0xef7de32228269a31fb87b1b07ac2517dffc9b068f826ae50f2fcdd263dc321ca",
+        "urls": [
+          "bzz-raw://76eab8996227d4862afe6c8140ee12551ff98051b024c0d097db43fb46f776eb",
+          "dweb:/ipfs/QmQhpr4W2mJYdJZph2UVQMoaQVzfw5v4ximdNUC7prGum9"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "script/ZkBallot.s.sol",
+    "id": 24138,
+    "exportedSymbols": {
+      "GuardScript": [
+        24137
+      ],
+      "Script": [
+        111
+      ],
+      "ScriptBase": [
+        74
+      ],
+      "StdChains": [
+        805
+      ],
+      "StdCheatsSafe": [
+        2538
+      ],
+      "StdStorage": [
+        3967
+      ],
+      "StdUtils": [
+        6248
+      ],
+      "VmSafe": [
+        7297
+      ],
+      "ZkBallot": [
+        24408
+      ],
+      "console": [
+        15818
+      ],
+      "console2": [
+        23943
+      ],
+      "stdJson": [
+        3793
+      ],
+      "stdMath": [
+        3935
+      ],
+      "stdStorageSafe": [
+        4859
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:290:12",
+    "nodes": [
+      {
+        "id": 24108,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:12",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 24109,
+        "nodeType": "ImportDirective",
+        "src": "65:30:12",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Script.sol",
+        "file": "forge-std/Script.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 24138,
+        "sourceUnit": 112,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 24111,
+        "nodeType": "ImportDirective",
+        "src": "96:45:12",
+        "nodes": [],
+        "absolutePath": "src/ZkBallot.sol",
+        "file": "../src/ZkBallot.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 24138,
+        "sourceUnit": 24409,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 24110,
+              "name": "ZkBallot",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 24408,
+              "src": "104:8:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 24137,
+        "nodeType": "ContractDefinition",
+        "src": "143:185:12",
+        "nodes": [
+          {
+            "id": 24117,
+            "nodeType": "FunctionDefinition",
+            "src": "180:31:12",
+            "nodes": [],
+            "body": {
+              "id": 24116,
+              "nodeType": "Block",
+              "src": "204:7:12",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "0a9254e4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUp",
+            "nameLocation": "189:5:12",
+            "parameters": {
+              "id": 24114,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:2:12"
+            },
+            "returnParameters": {
+              "id": 24115,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:0:12"
+            },
+            "scope": 24137,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 24136,
+            "nodeType": "FunctionDefinition",
+            "src": "217:109:12",
+            "nodes": [],
+            "body": {
+              "id": 24135,
+              "nodeType": "Block",
+              "src": "239:87:12",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 24120,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 58,
+                        "src": "249:2:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$7754",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 24122,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "252:14:12",
+                      "memberName": "startBroadcast",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6672,
+                      "src": "249:17:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 24123,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "249:19:12",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 24124,
+                  "nodeType": "ExpressionStatement",
+                  "src": "249:19:12"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 24127,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "278:12:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_ZkBallot_$24408_$",
+                        "typeString": "function () returns (contract ZkBallot)"
+                      },
+                      "typeName": {
+                        "id": 24126,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 24125,
+                          "name": "ZkBallot",
+                          "nameLocations": [
+                            "282:8:12"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 24408,
+                          "src": "282:8:12"
+                        },
+                        "referencedDeclaration": 24408,
+                        "src": "282:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ZkBallot_$24408",
+                          "typeString": "contract ZkBallot"
+                        }
+                      }
+                    },
+                    "id": 24128,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "278:14:12",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ZkBallot_$24408",
+                      "typeString": "contract ZkBallot"
+                    }
+                  },
+                  "id": 24129,
+                  "nodeType": "ExpressionStatement",
+                  "src": "278:14:12"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 24130,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 58,
+                        "src": "301:2:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$7754",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 24132,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "304:13:12",
+                      "memberName": "stopBroadcast",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6685,
+                      "src": "301:16:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 24133,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "301:18:12",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 24134,
+                  "nodeType": "ExpressionStatement",
+                  "src": "301:18:12"
+                }
+              ]
+            },
+            "functionSelector": "c0406226",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "run",
+            "nameLocation": "226:3:12",
+            "parameters": {
+              "id": 24118,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "229:2:12"
+            },
+            "returnParameters": {
+              "id": 24119,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "239:0:12"
+            },
+            "scope": 24137,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 24112,
+              "name": "Script",
+              "nameLocations": [
+                "167:6:12"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 111,
+              "src": "167:6:12"
+            },
+            "id": 24113,
+            "nodeType": "InheritanceSpecifier",
+            "src": "167:6:12"
+          }
+        ],
+        "canonicalName": "GuardScript",
+        "contractDependencies": [
+          24408
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          24137,
+          111,
+          74,
+          62,
+          6248,
+          2538,
+          805
+        ],
+        "name": "GuardScript",
+        "nameLocation": "152:11:12",
+        "scope": 24138,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 12
+}
